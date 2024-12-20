@@ -516,6 +516,7 @@ fr
   width: 100%;
   opacity: 100%;
   display: flex;
+  padding-top: 350px;
 
 }
 
@@ -531,8 +532,31 @@ fr
 
 #hero .container {
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 50px;
+}
+
+#hero .row {
+  height: 100%;
+}
+
+#hero-narrative {
+  width: 100%;
+}
+
+#hero .text-content {
+  padding: 20px;
+}
+
+#hero .img-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+#hero .stacked-img {
+  width: 80%;
+  margin-bottom: 15px;
 }
 
 #hero h1 {
@@ -621,7 +645,7 @@ fr
 }
 
 
-.awards {
+/*.awards {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -642,20 +666,26 @@ fr
   margin-right: -70px;
   margin-bottom:10px;
   gap: 10px;
-}
+}*/
 
 #award01 {
   display: flex;
-  width: 27%;
+  width: 15%;
+  height: 50%;
   opacity: 100%;
   margin: 10px;
   mix-blend-mode: multiply;
   background: transparent;
   mix-blend-mode: normal;
   border-color: transparent;
-  /*mask-image: url('./assets/img/award01.png');
+  /*mask-image: url('./assets/img/award01.png');*/
   mask-repeat: no-repeat;
-  mask-size: contain;*/
+  mask-size: contain;
+}
+
+#award02 {
+  height: 50%;
+  width: 50%;
 }
 
 #award03 {
@@ -666,7 +696,7 @@ fr
   margin: 10px;
 }
 
-.extra-image {
+/*.extra-image {
   width: 50%;
   height: 50%;
   margin-bottom: 10px;
@@ -676,6 +706,28 @@ fr
 .extra-image img {
   max-width: 100%;
   height: auto;
+}*/
+
+.img-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.stacked-img {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+#award01 {
+  mix-blend-mode: multiply;
+  background: transparent;
+  mix-blend-mode: normal;
+  border-color: transparent;
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }
 
 .slogan h1 span {
@@ -700,13 +752,14 @@ fr
 
 @media (max-width: 768px) {
   #hero {
-    height: 120vh;
-    background-attachment: initial;
+    flex-direction: column;
+    height: auto;
+    
   }
 
   #hero {
     /*background: url("../img/hero-bg.jpg") top left;*/
-    background: url("../img/background3-bg.jpg") top left;
+    background: url("../img/burnet.jpg") top left;
     background-size: cover;
     -webkit-background-size: cover !important;  /* Safari version */ 
     background-position: center center;
@@ -1391,13 +1444,13 @@ section {
 }
 
 .team:before {
-content: "";
-background: rgba(255, 255, 255, 0.6);
-position: absolute;
-bottom: 0;
-top: 0;
-left: 0;
-right: 0;
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 
@@ -1412,7 +1465,7 @@ right: 0;
   margin: auto; /* Center the cards within their containers */
   align-items:center;
   justify-content: center;
-  background-color: #b8c0c7;
+  background-color: #2c3e50;
   border-radius: 20px !important;
   box-shadow: 0 100px 50px rgba (0, 0, 0, 0.2);
 }
@@ -1433,7 +1486,7 @@ right: 0;
   justify-content: space-between;
   padding: 15px;
   align-items: center;
-  background-color: #b8c0c7;
+  background-color: #2c3e50;
 }
 
 /* Button styling */
@@ -1448,6 +1501,15 @@ right: 0;
 
 .card-body p {
   margin-bottom: 1px;
+  color:#bdc3c7;
+}
+
+.card-body .card-title {
+  color:#bdc3c7;
+}
+
+#card-matt .card-body .card-title2 {
+  color: #bdc3c7;
 }
 
 #card-mariah .card-text {
@@ -1479,7 +1541,7 @@ right: 0;
 }
 
 #card-matt, #card-mariah, #card-glendel, #card-lutchie, #card-adrian, #card-carmelo, #card-selene, #card-joven {
-  background-color: #b8c0c7;
+  background-color: #2c3e50;
 }
 
 /* Responsive design adjustments */
@@ -1505,7 +1567,6 @@ right: 0;
 
 
 /* Modals */
-
 
 .teammodal01 {
   display: none;
