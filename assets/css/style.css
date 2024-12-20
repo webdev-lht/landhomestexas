@@ -516,7 +516,7 @@ fr
   width: 100%;
   opacity: 100%;
   display: flex;
-  padding-top: 350px;
+  padding-top: 1px;
 
 }
 
@@ -551,12 +551,21 @@ fr
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 10px;
+  height: 100%;
 }
 
 #hero .stacked-img {
-  width: 80%;
-  margin-bottom: 15px;
+  width: 60%;
+  height: auto;
+  max-height: 20%;
+  object-fit: contain;
+  margin-bottom: 5px;
+  margin-left: 300px;
+}
+
+#award01, #award02, #award03 {
+  flex-shrink: 1;
 }
 
 #hero h1 {
@@ -670,10 +679,9 @@ fr
 
 #award01 {
   display: flex;
-  width: 15%;
-  height: 50%;
+  width: 40% !important;
+  height: 40% !important;
   opacity: 100%;
-  margin: 10px;
   mix-blend-mode: multiply;
   background: transparent;
   mix-blend-mode: normal;
@@ -681,19 +689,31 @@ fr
   /*mask-image: url('./assets/img/award01.png');*/
   mask-repeat: no-repeat;
   mask-size: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 #award02 {
-  height: 50%;
-  width: 50%;
+  height: 55%;
+  width: 40%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 #award03 {
   display: flex;
-  width: 50%;
-  height: 50%;
+  width: 70% !important;
+  height: 70% !important;
   opacity: 100%;
   margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#award01:hover, #award02:hover, #award03:hover{
+  width: 100% !important;
+  height: auto !important;
+  transform: scale(1);
 }
 
 /*.extra-image {
@@ -721,14 +741,6 @@ fr
   margin-bottom: 15px;
 }
 
-#award01 {
-  mix-blend-mode: multiply;
-  background: transparent;
-  mix-blend-mode: normal;
-  border-color: transparent;
-  mask-repeat: no-repeat;
-  mask-size: contain;
-}
 
 .slogan h1 span {
   width: 20%;
