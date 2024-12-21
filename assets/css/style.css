@@ -775,12 +775,12 @@ fr
   }
 
   #hero-narrative {
-    margin-right: 75px !important;
+    margin-right: 100px !important;
   }
 
   #hero h1 {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 400;
     text-align: center;
     gap: 10px;
