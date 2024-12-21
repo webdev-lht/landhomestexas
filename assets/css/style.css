@@ -242,6 +242,25 @@ fr
   }
 }
 
+@media (max-width: 414px) {
+  #header {
+    height: 70px;
+  }
+
+  #logo {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  #header {
+    height: 65px;
+  }
+
+  #logo {
+    max-height: 45px;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -843,14 +862,176 @@ fr
   }
 }
 
-@media (max-width: 462px) {
-  #hero h1 {
-    font-size: 75px;
-    line-height: 65px;
-    font-weight: 500;
+
+@media (max-width: 768px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    padding-top: 50px;
+    background: url("../img/burnet.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
     text-align: center;
+  }
+
+  #hero .slogan h1 {
+    font-size: 18px !important;
+    width: 80px !important;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+
+  #hero h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px auto;
+    padding: 0 15px;
+  }
+
+  #hero-narrative {
+    margin-right: 100px !important;
+  }
+
+  #hero .text-content {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #hero .img-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin-right: 50px !important;
+    margin-top: 20px;
+  }
+
+  #hero .stacked-img {
+    width: 70% !important;
+    height: auto;
+    margin: 10px 0;
+    object-fit: contain;
+  }
+
+  #award01, #award02, #award03 {
+    width: 120px !important; /* Adjusted width for smaller screens */
+    height: auto;
+    margin: 10px;
+    padding-right: 1px;
+    margin-right: 100px !important;
+  }
+
+  #hero .btn-get-started {
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  #hero-narrative h6 {
+    font-size: 20px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  #hero .logo {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    padding-top: 50px;
+    background: url("../img/burnet.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  #hero .slogan h1 {
+    font-size: 24px !important;
+    width: 90px !important;
+    font-weight: 700;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  #hero h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px auto;
+    padding: 0 15px;
+  }
+
+  #hero-narrative {
+    margin-right: 100px !important;
+  }
+
+  #hero .text-content {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #hero .img-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  #hero .stacked-img {
+    width: 70% !important;
+    height: auto;
+    margin: 10px 0;
+    object-fit: contain;
+  }
+
+  #award01, #award02, #award03 {
+    width: 120px !important; /* Adjusted width for smaller screens */
+    height: auto;
+    margin: 10px;
+    padding-right: 1px;
+    margin-right: 100px !important;
+  }
+
+  #hero .btn-get-started {
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  #hero-narrative h6 {
+    font-size: 20px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  #hero .logo {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  #award01, #award02, #award03 {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
   }
 }
 
