@@ -689,15 +689,15 @@ fr
   /*mask-image: url('./assets/img/award01.png');*/
   mask-repeat: no-repeat;
   mask-size: contain;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  /*cursor: pointer;
+  transition: transform 0.3s ease;*/
 }
 
 #award02 {
-  height: 55%;
-  width: 40%;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  height: 90% !important;
+  width: 80% !important;
+  /*cursor: pointer;
+  transition: transform 0.3s ease;*/
 }
 
 #award03 {
