@@ -254,13 +254,15 @@ fr
 
 @media (max-width: 375px) {
   #header {
-    height: 65px;
+    height: 40px;
   }
 
   #logo {
-    max-height: 45px;
+    max-height: 39px;
   }
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -1082,7 +1084,7 @@ fr
 
   #award01, #award02, #award03 {
     width: 100% !important; /* Adjusted width for smaller screens */
-    height: auto !important;
+    height: 100% !important;
     margin: 10px;
     padding-right: 1px;
     margin-right: 25px !important;
