@@ -706,14 +706,14 @@ fr
   height: 70% !important;
   opacity: 100%;
   margin: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  /*cursor: pointer;
+  transition: transform 0.3s ease;*/
 }
 
-#award01:hover, #award02:hover, #award03:hover{
+/*#award01:hover, #award02:hover, #award03:hover{
   width: 100% !important;
   height: auto !important;
-  transform: scale(1);
+  transform: scale(1);*
 }
 
 /*.extra-image {
@@ -756,61 +756,66 @@ fr
   color: darkblue;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 428px) {
   #hero {
-    background-attachment: initial;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
+    display: flex;
     flex-direction: column;
     height: auto;
-    
-  }
-
-  #hero {
-    /*background: url("../img/hero-bg.jpg") top left;*/
-    background: url("../img/burnet.jpg") top left;
+    padding: 20px;
+    background: url("../img/burnet.jpg") center center no-repeat;
     background-size: cover;
-    -webkit-background-size: cover !important;  /* Safari version */ 
-    background-position: center center;
-    background-repeat: no-repeat;
     position: relative;
   }
 
   #hero h1 {
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
   }
 
   #hero h6 {
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 5px 0;
+    text-align: justify;
   }
 
-  /*#hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }*/
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero .text-content {
+    padding: 10px;
+    margin-bottom: 20px;
   }
 
-  #hero .btn-get-started,
-  #hero .btn-watch-video {
-    font-size: 13px;
+  #hero .img-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  #hero .stacked-img {
+    width: 60%; /* Adjust to make images smaller for mobile */
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #award01, #award02, #award03 {
+    width: 80%; /* Adjusted width for smaller screens */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #hero .btn-get-started {
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
   }
 }
 
-@media (max-height: 500px) {
-  #hero {
-    height: 120vh;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
