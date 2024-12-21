@@ -774,13 +774,17 @@ fr
     width: 100%;
   }
 
+  #hero-narrative {
+    margin-right: 15px !important;
+  }
+
   #hero h1 {
     font-size: 75px;
     line-height: 65px;
     font-weight: 500;
     text-align: center;
     gap: 10px;
-    margin-right: 50px !important;
+    
   }
 
   #hero h6 {
