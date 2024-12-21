@@ -411,6 +411,12 @@ fr
 
   #header {
     padding: 30px;
+    height: 120px;
+  }
+
+  #header .logo {
+    max-height: 20px;
+    margin-bottom: 70px;
   }
 }
 
@@ -521,7 +527,7 @@ fr
   opacity: 100%;
   display: flex;
   padding-top: 1px;
-
+  margin-top: 0px;
 }
 
 #hero:before {
