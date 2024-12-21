@@ -408,6 +408,10 @@ fr
   .navbar ul {
     display: none;
   }
+
+  #header {
+    padding: 30px;
+  }
 }
 
 .navbar-mobile {
@@ -757,7 +761,7 @@ fr
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #hero {
     display: flex;
     flex-direction: column;
@@ -768,30 +772,26 @@ fr
     background-size: cover;
     position: relative;
     width: 100%;
+    text-align: center;
   }
 
-  #hero .slogan {
-    width: 100%;
+  #hero .slogan h1 {
+    font-size: 18px !important;
+    width: 80px !important;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+
+  #hero h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px auto;
+    padding: 0 15px;
   }
 
   #hero-narrative {
     margin-right: 100px !important;
-  }
-
-  #hero h1 {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    text-align: center;
-    gap: 10px;
-    
-  }
-
-  #hero h6 {
-    font-size: 12px;
-    line-height: 16px;
-    margin: 5px 0;
-    text-align: justify;
   }
 
   #hero .text-content {
@@ -800,24 +800,22 @@ fr
   }
 
   #hero .img-content {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-left: 0px;
-    margin-right: 500px !important;
-    justify-content: center;
+    margin-top: 20px;
   }
 
   #hero .stacked-img {
-    width: 50px; /* Adjust to make images smaller for mobile */
-    max-width: 500px;
+    width: 70% !important;
     height: auto;
+    margin: 10px 0;
     object-fit: contain;
   }
 
   #award01, #award02, #award03 {
-    width: 100%; /* Adjusted width for smaller screens */
+    width: 120px !important; /* Adjusted width for smaller screens */
     height: auto;
     margin: 10px;
     padding-right: 1px;
